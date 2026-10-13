@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Churn Intelligence</title><link rel="stylesheet" href="/static/styles.css"></head><body>
+<div class="shell"><header><div><p class="eyebrow">ML DECISION PLATFORM</p><h1>Customer Churn Intelligence</h1><p>Production-style classification, probability scoring and retention recommendations.</p></div><span class="pill">FastAPI + scikit-learn</span></header>
+<main><section class="card"><h2>Customer profile</h2><form id="form" class="grid">
+<label>Age<input name="age" type="number" value="42"></label><label>Tenure (months)<input name="tenure_months" type="number" value="8"></label>
+<label>Monthly charges<input name="monthly_charges" type="number" value="105"></label><label>Total charges<input name="total_charges" type="number" value="840"></label>
+<label>Support tickets<input name="support_tickets" type="number" value="4"></label><label>Senior citizen<select name="senior_citizen"><option value="0">No</option><option value="1">Yes</option></select></label>
+<label>Contract<select name="contract_type"><option>Month-to-month</option><option>One year</option><option>Two year</option></select></label><label>Internet<select name="internet_service"><option>Fiber optic</option><option>DSL</option><option>No</option></select></label>
+<label>Paperless billing<select name="paperless_billing"><option>Yes</option><option>No</option></select></label><label>Payment<select name="payment_method"><option>Electronic check</option><option>Credit card</option><option>Bank transfer</option><option>Mailed check</option></select></label>
+<button type="submit">Score churn risk</button></form></section>
+<section class="card result"><p class="eyebrow">PREDICTED CHURN RISK</p><div id="score" class="score">--</div><div class="bar"><span id="fill"></span></div><h3 id="band">Awaiting score</h3><p id="rec">Enter a customer profile to generate a probability and action.</p></section></main></div><script src="/static/app.js"></script></body></html>
